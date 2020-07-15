@@ -38,6 +38,7 @@ def parse_args():
     parser.add_argument('--npts', default=2048, type=int, help='Number of output points generated')
     parser.add_argument('--inpts', default=2048, type=int, help='Number of input points')
     parser.add_argument('--ngtpts', default=2048, type=int, help='Number of ground-truth points')
+    parser.add_argument('--scene', default="01", type=str, help='Which scene to use as the validation set')
 
     args = parser.parse_args()
     args.start_epoch = 0

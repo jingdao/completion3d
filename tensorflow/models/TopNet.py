@@ -22,7 +22,7 @@ def get_arch(nlevels, npts):
         logmult -= 1
     return arch
 
-print(get_arch(8, 16384))
+print('get_arch', get_arch(8, 16384))
 
 def TopNet_setup(args):
     args.odir = 'results/%s/TopNet%dL%dF%d_%s' % (args.dataset, args.ENCODER_ID, args.NLEVELS, args.NFEAT, args.dist_fun)
@@ -33,6 +33,7 @@ def TopNet_setup(args):
     args.odir += '_lr%.4f' % (args.lr)
     args.odir += '_' + args.optim
     args.odir += '_B%d' % (args.batch_size)
+    args.odir += '_Scene%s' % args.scene
 
 def TopNet_create_model(args):
     create_multigpu_model(TopNet, args)

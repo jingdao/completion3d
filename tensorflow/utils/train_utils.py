@@ -77,7 +77,7 @@ def set_seed(seed):
     tf.set_random_seed(seed)
 
 def data_setup(args, phase, num_workers, repeat):
-    if args.dataset in ['shapenet', 'shapenet16384']:
+    if args.dataset in ['shapenet', 'shapenet16384', 'facade']:
         DataProcessClass = ShapenetDataProcess
     # Initialize data processes
     data_queue = Queue(4 * num_workers)

@@ -54,7 +54,7 @@ def main():
         args.resume = model_at(args, i)
         model, stats = tf_resume(args, i)
     else:
-        check_overwrite(os.path.join(args.odir, 'trainlog.txt'))
+#        check_overwrite(os.path.join(args.odir, 'trainlog.txt'))
         model = eval(args.NET + '_create_model')(args)
         stats = []
 

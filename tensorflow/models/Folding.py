@@ -14,6 +14,7 @@ def Folding_setup(args):
     args.odir += '_lr%.4f' % (args.lr)
     args.odir += '_' + args.optim
     args.odir += '_B%d' % (args.batch_size)
+    args.odir += '_Scene%s' % args.scene
 
 def Folding_create_model(args):
     create_multigpu_model(Folding, args)
