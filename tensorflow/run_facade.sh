@@ -42,5 +42,5 @@ do
         --eval $EVAL --optim $OPTIM --code_nfts $CODE_NFTS \
         --resume $RESUME --npts $NPTS --ENCODER_ID $ENCODER_ID --dist_fun $DIST_FUN \
         --save_nth_epoch $SAVE_EPOCH --test_nth_epoch $TEST_EPOCH \
-        --benchmark $BENCHMARK --NLEVELS $NLEVELS --NFEAT $NFEAT 2>/dev/null
+        --benchmark $BENCHMARK --NLEVELS $NLEVELS --NFEAT $NFEAT
 done
