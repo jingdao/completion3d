@@ -91,6 +91,7 @@ def test_process():
     args.pc_augm_mirror_prob=0
     args.pc_augm_jitter=0
     args.inpts=2048
+    args.scene='01'
     data_processes = []
     data_queue = Queue(1)
     for i in range(args.nworkers):
