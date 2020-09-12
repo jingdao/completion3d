@@ -5,6 +5,11 @@ This repository is a fork of the
 that implements various deep learning methods for point cloud completion
 including PCN, TopNet, and FoldingNet.
 
+Note: This repository only implements the baseline methods which are PCN, TopNet, and FoldingNet.
+Please visit our main repository
+[Point Cloud Scene Completion of Obstructed Building Facades with Generative Adversarial Inpainting](https://github.com/jingdao/point_cloud_scene_completion)
+for code to perform scene completion using generative adversarial inpainting.
+
 ## Building Facade Dataset
 
 Get the original building facade dataset with 11 scenes (input + ground truth) [here](https://www.dropbox.com/s/nvatmp1hz3yot57/facade_original.zip?dl=0).
